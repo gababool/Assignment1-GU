@@ -26,6 +26,7 @@ public class Menu {
         System.out.print("Type your option: ");
 
         userInput = scanner.nextInt();
+        scanner.nextLine();
         executeTask(userInput);
     }
 
