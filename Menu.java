@@ -52,10 +52,12 @@ public class Menu {
             break;
 
             case 7:
+            System.out.println("Thank you for using our grading system. Have a nice day!");
             break;
 
             default:
-            System.out.println("Thank you for using our grading system. Have a nice day!");
+            System.out.println("Please enter a valid option!");
+            menu();
             break;
         
         }
