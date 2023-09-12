@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public static Scanner scanner = new Scanner(System.in);
+    public static Scanner menuScanner = new Scanner(System.in);
     static int[] studentScores;
 
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class Menu {
 
     public static void menu(){
         
-        System.out.println("\n Welcome to the menu. Choose one of the options below: \n");
+        System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
         
         System.out.println("1. Register new scores for students.");
         System.out.println("2. Print all registered grades.");
@@ -25,7 +25,7 @@ public class Menu {
 
         System.out.print("Type your option: ");
 
-        int userInput = scanner.nextInt();
+        int userInput = menuScanner.nextInt();
         executeTask(userInput);
     }
 

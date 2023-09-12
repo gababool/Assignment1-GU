@@ -23,7 +23,6 @@ public class Task1and2 {
                 input.nextLine();
             } 
         }
-        input.close();
         return studentScores;
     }
 
