@@ -31,32 +31,26 @@ public class Menu {
         switch (userInput) {
             case 1:
                 studentScores = Task1.storeStudentScores();
-                menu();
                 break;
 
             case 2:
                 Task1.printStudentScores(studentScores);
-                menu();
                 break;
 
             case 3:
                 Task3.meanOfScores(studentScores);
-                menu();
                 break;
 
             case 4:
                 Task4.highestAndLowestScore(studentScores);
-                menu();
                 break;
 
             case 5:
                 Task5.findHighestScore(studentScores);
-                menu();
                 break;
 
             case 6:
                 Task6.hashtagFinder();
-                menu();
                 break;
 
             case 7:
@@ -66,10 +60,10 @@ public class Menu {
 
             default:
                 System.out.println("Error - Invalid value. Please type between 1 and 7");
-                menu();
                 break;
 
         }
+        menu();
     }
 
 }
