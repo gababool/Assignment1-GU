@@ -11,6 +11,10 @@ public class Task5 {
                 highestScoreIndex = i;
             }
         }
-        System.out.println("Higest score = " + highestScore + " at index " + highestScoreIndex);
+        if (highestScore <= studentScores.length-2){
+            
+        }
+        
+        
     }
 }
