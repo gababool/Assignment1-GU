@@ -13,6 +13,8 @@ public class Menu {
 
     public static void menu() {
 
+        IOScanner scanner = new IOScanner();
+
         System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
 
         System.out.println("1. Register new scores for students.");
@@ -25,21 +27,22 @@ public class Menu {
 
         System.out.print("Type your option: ");
 
-        int userInput = menuScanner.nextInt();
+        // int userInput = menuScanner.nextInt();
+        int userInput = scanner.inputInt();
         executeTask(userInput);
     }
 
-    public static void executeTask(int userInput){
-        switch (userInput){
-            case 1: 
-            studentScores = Task1.storeStudentScores();
-            menu();
-            break;
+    public static void executeTask(int userInput) {
+        switch (userInput) {
+            case 1:
+                studentScores = Task1.storeStudentScores();
+                menu();
+                break;
 
             case 2:
-            Task1.printStudentScores(studentScores);
-            menu();
-            break;
+                Task1.printStudentScores(studentScores);
+                menu();
+                break;
 
             case 3:
                 break;
