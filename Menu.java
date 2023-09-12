@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Menu {
 
     static Scanner scanner = new Scanner(System.in);
-    static int userInput;
     static int[] studentScores;
 
     public static void main(String[] args) {
-       Task1.storeStudentScores();
-       menu();
+        studentScores = Task1.storeStudentScores();
+        Task1.printStudentScores(studentScores);
+        menu();
     }
 
     public static void menu(){
@@ -25,13 +25,12 @@ public class Menu {
 
         System.out.print("Type your option: ");
 
-        userInput = scanner.nextInt();
-        scanner.nextLine();
+        int userInput = scanner.nextInt();
         executeTask(userInput);
     }
 
-    public static void executeTask(int userChoice){
-        switch (userChoice){
+    public static void executeTask(int userInput){
+        switch (userInput){
             case 1: 
             studentScores = Task1.storeStudentScores();
             menu();
@@ -49,6 +48,8 @@ public class Menu {
             break;
 
             case 5:
+            Task5.findHighestScore(studentScores);
+            menu();
             break;
 
             case 6:
