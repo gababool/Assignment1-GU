@@ -65,7 +65,7 @@ public class Menu {
                 break;
 
             default:
-                System.out.println("Please enter a valid option!");
+                System.out.println("Error - Invalid value. Please type between 1 and 7");
                 menu();
                 break;
 
