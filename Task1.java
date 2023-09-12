@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task1and2 {
+public class Task1 {
 
     private static Scanner input = new Scanner(System.in);
     static int[] studentScores = new int[7];
