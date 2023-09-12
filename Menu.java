@@ -1,5 +1,4 @@
 public class Menu {
-
     static int[] studentScores;
 
     public static void main(String[] args) {
@@ -61,6 +60,7 @@ public class Menu {
 
             case 7:
                 System.out.println("Thank you for using our grading system. Have a nice day!");
+                IOScanner.close();
                 break;
 
             default:
