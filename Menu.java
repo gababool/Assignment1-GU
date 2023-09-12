@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 public class Menu {
 
-    static Scanner scanner = new Scanner(System.in);
-    static int userInput;
+    public static Scanner menuScanner = new Scanner(System.in);
     static int[] studentScores;
 
     public static void main(String[] args) {
-       Task1.storeStudentScores();
-       menu();
+        studentScores = Task1.storeStudentScores();
+        Task1.printStudentScores(studentScores);
+        menu();
     }
 
-    public static void menu(){
-        
-        System.out.println("\n Welcome to the menu. Choose one of the options below: \n");
-        
+    public static void menu() {
+
+        System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
+
         System.out.println("1. Register new scores for students.");
         System.out.println("2. Print all registered grades.");
         System.out.println("3. Calculate the mean of the entered scores.");
@@ -25,13 +25,12 @@ public class Menu {
 
         System.out.print("Type your option: ");
 
-        userInput = scanner.nextInt();
-        scanner.nextLine();
+        int userInput = menuScanner.nextInt();
         executeTask(userInput);
     }
 
-    public static void executeTask(int userChoice){
-        switch (userChoice){
+    public static void executeTask(int userInput){
+        switch (userInput){
             case 1: 
             studentScores = Task1.storeStudentScores();
             menu();
@@ -43,32 +42,31 @@ public class Menu {
             break;
 
             case 3:
-            Task3.meanOfScores(studentScores);
-            menu();
-            break;
+                break;
 
             case 4:
-            break;
+                break;
 
             case 5:
-            break;
+                Task5.findHighestScore(studentScores);
+                menu();
+                break;
 
             case 6:
-            Task6.hashtagFinder();
-            menu();
-            break;
+                Task6.hashtagFinder();
+                menu();
+                break;
 
             case 7:
-            System.out.println("Thank you for using our grading system. Have a nice day!");
-            break;
+                System.out.println("Thank you for using our grading system. Have a nice day!");
+                break;
 
             default:
-            System.out.println("Please enter a valid option!");
-            menu();
-            break;
-        
+                System.out.println("Please enter a valid option!");
+                menu();
+                break;
+
         }
     }
 
 }
-
