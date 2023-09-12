@@ -45,6 +45,8 @@ public class Menu {
                 break;
 
             case 3:
+                Task3.meanOfScores(studentScores);
+                menu();
                 break;
 
             case 4:
