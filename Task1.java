@@ -12,6 +12,7 @@ public class Task1 {
     }
 
     public static int[] storeStudentScores() {
+
         for (int i = 0; i <= studentScores.length - 1; i++) {
             if (i <= ordinalIndicators.length - 2) {
                 System.out.print("Enter the score of the " + (i + 1) + ordinalIndicators[i] + " student: ");
@@ -22,9 +23,14 @@ public class Task1 {
                 studentScores[i] = input.nextInt();
                 input.nextLine();
             }
+            if (studentScores[i] < 0 || studentScores[i] > 100) {
+                System.out.println("Error - Input out of bounds. Enter a score between 0 and 100.");
+                i--;
+            }
         }
         System.out.println("Thank you for your input.");
         return studentScores;
+
     }
 
     public static void printStudentScores(int[] studentScores) {
