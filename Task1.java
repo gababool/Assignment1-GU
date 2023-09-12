@@ -21,11 +21,11 @@ public class Task1 {
                 System.out.print("Enter the score of the " + (i + 1) + ordinalIndicators[3] + " student: ");
                 studentScores[i] = input.nextInt();
                 input.nextLine();
-            } 
+            }
         }
+        System.out.println("Thank you for your input.");
         return studentScores;
     }
-
 
     public static void printStudentScores(int[] studentScores) {
         String scores = "";
@@ -35,7 +35,7 @@ public class Task1 {
                 scores += ", ";
             }
         }
-        System.out.println("Thank you for your input. \nYour entered scores are: \n" + scores);
+        System.out.println("Your entered scores are: \n" + scores);
     }
 
 }
