@@ -23,6 +23,7 @@ public class Menu {
 
         // int userInput = menuScanner.nextInt();
         int userInput = IOScanner.inputInt();
+        IOScanner.inputString();
         executeTask(userInput);
     }
 
@@ -44,7 +45,7 @@ public class Menu {
                 break;
 
             case 4:
-                Task4.findHighestAndLowestScore(studentScores);
+                Task4.highestAndLowestScore(studentScores);
                 menu();
                 break;
 
