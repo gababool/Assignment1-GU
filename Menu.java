@@ -2,7 +2,7 @@ public class Menu {
     static int[] studentScores;
 
     public static void main(String[] args) {
-        studentScores = Task1.storeStudentScores();
+        studentScores = Task1.inputStudentScores(7);
         Task1.printStudentScores(studentScores);
         menu();
     }
@@ -30,7 +30,7 @@ public class Menu {
     public static void executeTask(int userInput) {
         switch (userInput) {
             case 1:
-                studentScores = Task1.storeStudentScores();
+                studentScores = Task1.inputStudentScores(7);
                 break;
 
             case 2:
@@ -56,7 +56,7 @@ public class Menu {
             case 7:
                 System.out.println("Thank you for using our grading system. Have a nice day!");
                 IOScanner.close();
-                break;
+                return;
 
             default:
                 System.out.println("Error - Invalid value. Please type between 1 and 7");
