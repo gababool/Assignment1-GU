@@ -1,8 +1,4 @@
-import java.util.Scanner;
-
 public class Menu {
-
-    public static Scanner menuScanner = new Scanner(System.in);
     static int[] studentScores;
 
     public static void main(String[] args) {
@@ -12,6 +8,7 @@ public class Menu {
     }
 
     public static void menu() {
+
         System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
 
         System.out.println("1. Register new scores for students.");
@@ -24,26 +21,31 @@ public class Menu {
 
         System.out.print("Type your option: ");
 
-        int userInput = menuScanner.nextInt();
+        // int userInput = menuScanner.nextInt();
+        int userInput = IOScanner.inputInt();
         executeTask(userInput);
     }
 
-    public static void executeTask(int userInput){
-        switch (userInput){
-            case 1: 
-            studentScores = Task1.storeStudentScores();
-            menu();
-            break;
+    public static void executeTask(int userInput) {
+        switch (userInput) {
+            case 1:
+                studentScores = Task1.storeStudentScores();
+                menu();
+                break;
 
             case 2:
-            Task1.printStudentScores(studentScores);
-            menu();
-            break;
+                Task1.printStudentScores(studentScores);
+                menu();
+                break;
 
             case 3:
+                Task3.meanOfScores(studentScores);
+                menu();
                 break;
 
             case 4:
+                Task4.findHighestAndLowestScore(studentScores);
+                menu();
                 break;
 
             case 5:
@@ -58,6 +60,7 @@ public class Menu {
 
             case 7:
                 System.out.println("Thank you for using our grading system. Have a nice day!");
+                IOScanner.close();
                 break;
 
             default:
