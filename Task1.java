@@ -27,7 +27,7 @@ public class Task1 {
                 scores += ", ";
             }
         }
-        System.out.println("Your entered scores are\n" + scores);
+        System.out.println("Your entered scores are:\n" + scores);
     }
 
     public static String addOrdinalIndicator(int number) {
