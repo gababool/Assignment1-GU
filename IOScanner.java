@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
 public class IOScanner {
-    private Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
 
     public Scanner getScanner() {
         return scanner;
     }
 
-    public int inputInt() {
+    public static int inputInt() {
         return scanner.nextInt();
     }
 
-    public String inputString() {
+    public static String inputString() {
         return scanner.nextLine();
     }
 
-    public double inputDouble() {
+    public static double inputDouble() {
         return scanner.nextDouble();
     }
 
-    public void close() {
+    public static void close() {
         scanner.close();
     }
 }

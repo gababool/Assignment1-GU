@@ -1,8 +1,5 @@
-import java.util.Scanner;
-
 public class Menu {
 
-    public static Scanner menuScanner = new Scanner(System.in);
     static int[] studentScores;
 
     public static void main(String[] args) {
@@ -12,8 +9,6 @@ public class Menu {
     }
 
     public static void menu() {
-
-        IOScanner scanner = new IOScanner();
 
         System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
 
@@ -28,7 +23,7 @@ public class Menu {
         System.out.print("Type your option: ");
 
         // int userInput = menuScanner.nextInt();
-        int userInput = scanner.inputInt();
+        int userInput = IOScanner.inputInt();
         executeTask(userInput);
     }
 
