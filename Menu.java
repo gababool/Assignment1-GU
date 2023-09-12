@@ -37,7 +37,9 @@ public class Menu {
             menu();
             break;
 
-            case 2: 
+            case 2:
+            Task1.printStudentScores(studentScores);
+            menu();
             break;
 
             case 3:
@@ -50,6 +52,8 @@ public class Menu {
             break;
 
             case 6:
+            Task6.hashtagFinder();
+            menu();
             break;
 
             case 7:
