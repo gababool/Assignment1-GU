@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Menu {
 
-    static Scanner scanner = new Scanner(System.in);
+    public static Scanner scanner = new Scanner(System.in);
     static int[] studentScores;
 
     public static void main(String[] args) {
-        studentScores = Task1.storeStudentScores();
-        Task1.printStudentScores(studentScores);
+        studentScores = Task1and2.storeStudentScores();
+        Task1and2.printStudentScores(studentScores);
         menu();
     }
 
@@ -32,12 +32,12 @@ public class Menu {
     public static void executeTask(int userInput){
         switch (userInput){
             case 1: 
-            studentScores = Task1.storeStudentScores();
+            studentScores = Task1and2.storeStudentScores();
             menu();
             break;
 
             case 2:
-            Task1.printStudentScores(studentScores);
+            Task1and2.printStudentScores(studentScores);
             menu();
             break;
 

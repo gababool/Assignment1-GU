@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task1 {
+public class Task1and2 {
 
     private static Scanner input = new Scanner(System.in);
     static int[] studentScores = new int[7];
@@ -21,7 +21,7 @@ public class Task1 {
                 System.out.print("Enter the score of the " + (i + 1) + ordinalIndicators[3] + " student: ");
                 studentScores[i] = input.nextInt();
                 input.nextLine();
-            }
+            } 
         }
         input.close();
         return studentScores;
