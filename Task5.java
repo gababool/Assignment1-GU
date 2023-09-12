@@ -11,7 +11,6 @@ public class Task5 {
                 highestScoreIndex = i;
             }
         }
-        System.out.println("The highest score is " + highestScore + " and belong to the " + highestScoreIndex
-                + ordinalIndicators[highestScoreIndex + 1]);
+        System.out.println("Higest score = " + highestScore + " at index " + highestScoreIndex);
     }
 }

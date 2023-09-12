@@ -6,8 +6,8 @@ public class Menu {
     static int[] studentScores;
 
     public static void main(String[] args) {
-        studentScores = Task1and2.storeStudentScores();
-        Task1and2.printStudentScores(studentScores);
+        studentScores = Task1.storeStudentScores();
+        Task1.printStudentScores(studentScores);
         menu();
     }
 
@@ -32,12 +32,12 @@ public class Menu {
     public static void executeTask(int userInput){
         switch (userInput){
             case 1: 
-            studentScores = Task1and2.storeStudentScores();
+            studentScores = Task1.storeStudentScores();
             menu();
             break;
 
             case 2:
-            Task1and2.printStudentScores(studentScores);
+            Task1.printStudentScores(studentScores);
             menu();
             break;
 
