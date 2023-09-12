@@ -29,17 +29,17 @@ public class Menu {
         executeTask(userInput);
     }
 
-    public static void executeTask(int userInput) {
-        switch (userInput) {
-            case 1:
-                studentScores = Task1.storeStudentScores();
-                menu();
-                break;
+    public static void executeTask(int userInput){
+        switch (userInput){
+            case 1: 
+            studentScores = Task1and2.storeStudentScores();
+            menu();
+            break;
 
             case 2:
-                Task1.printStudentScores(studentScores);
-                menu();
-                break;
+            Task1and2.printStudentScores(studentScores);
+            menu();
+            break;
 
             case 3:
                 break;
