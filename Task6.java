@@ -11,9 +11,13 @@ public class Task6 {
         
         String foundHashtags = "";
         int hashtagCounter = 0;
-        for (String word: stringArray){
+        for (int i = 0; i <= stringArray.length-1; i++){
+            String word = stringArray[i];
             if (word.contains("#")){
-                foundHashtags += word + " ";
+                if (hashtagCounter > 0){
+                    foundHashtags += " ";
+                }
+                foundHashtags += word;
                 hashtagCounter++;
             }
         }
