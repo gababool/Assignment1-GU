@@ -1,5 +1,13 @@
 public class Task4 {
     
+    public static void findHighestAndLowestScore(int[] studentScores){
+        int highest = studentScores[0];
+        int lowest = studentScores[0];
+
+        int[] studentScoresTwo = new int[studentScores.length-2];
+
+    
+    }
 }
 
 

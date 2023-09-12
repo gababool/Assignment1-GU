@@ -10,6 +10,6 @@ public class Task3 {
         }
          double mean = (double)totalScore / studentScores.length;
 
-         System.out.printf(Locale.ENGLISH, "The mean of the number is %.2f ", mean, ".");
+         System.out.printf(Locale.ENGLISH, "The mean of the number is %.2f ", mean);
     }
 }
