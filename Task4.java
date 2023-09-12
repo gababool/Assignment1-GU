@@ -24,7 +24,7 @@ public class Task4 {
             }
         }
         System.out.println("The two lowest scores provided are " + lowest + ", and " + secondLowest);
-        System.out.println("The two highest scores provided are " + highest + ",and " + secondHighest);
+        System.out.println("The two highest scores provided are " + highest + ", and " + secondHighest);
 
     }
 }
