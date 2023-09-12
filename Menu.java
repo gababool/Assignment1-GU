@@ -12,7 +12,6 @@ public class Menu {
     }
 
     public static void menu() {
-
         System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
 
         System.out.println("1. Register new scores for students.");
