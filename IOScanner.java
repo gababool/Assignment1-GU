@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class IOScanner {
     private static Scanner scanner = new Scanner(System.in);
 
-    public Scanner getScanner() {
-        return scanner;
-    }
-
     public static int inputInt() {
         return scanner.nextInt();
     }
