@@ -1,8 +1,6 @@
 public class Task1 {
-
-    static int[] studentScores = new int[7];
-
-    public static int[] storeStudentScores() {
+    public static int[] inputStudentScores(int numberOfStundents) {
+        int[] studentScores = new int[numberOfStundents];
 
         for (int i = 0; i <= studentScores.length - 1; i++) {
             System.out.print("Enter the score for the " + addOrdinalIndicator(i + 1) + " student ");
