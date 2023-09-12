@@ -44,7 +44,7 @@ public class Menu {
                 break;
 
             case 4:
-                Task4.findHighestAndLowestScore(studentScores);
+                Task4.highestAndLowestScore(studentScores);
                 menu();
                 break;
 
