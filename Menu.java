@@ -1,8 +1,4 @@
-import java.util.Scanner;
-
 public class Menu {
-
-    public static Scanner menuScanner = new Scanner(System.in);
     static int[] studentScores;
 
     public static void main(String[] args) {
