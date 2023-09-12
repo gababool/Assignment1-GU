@@ -1,16 +1,13 @@
-import java.util.Scanner;
-
 public class Task1 {
 
-    private static Scanner input = new Scanner(System.in);
     static int[] studentScores = new int[7];
 
     public static int[] storeStudentScores() {
 
         for (int i = 0; i <= studentScores.length - 1; i++) {
             System.out.print("Enter the score of the " + addOrdinalIndicator(i + 1) + " student: ");
-            studentScores[i] = input.nextInt();
-            input.nextLine();
+            studentScores[i] = IOScanner.inputInt();
+            IOScanner.inputString(); // Works as nextLine();
 
             if (studentScores[i] < 0 || studentScores[i] > 100) {
                 System.out.println("Error - Input out of bounds. Enter a score between 0 and 100.");

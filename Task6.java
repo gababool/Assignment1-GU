@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class Task6 {
-    
-    private static Scanner scanner = new Scanner(System.in);
 
     public static void hashtagFinder(){
         System.out.println("Type a sentence using hashtags: ");
-        String sentence = scanner.nextLine();
+        String sentence = IOScanner.inputString();
         String[] stringArray = sentence.split(" ");
         
         String foundHashtags = "";
