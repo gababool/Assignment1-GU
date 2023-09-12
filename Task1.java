@@ -4,12 +4,6 @@ public class Task1 {
 
     private static Scanner input = new Scanner(System.in);
     static int[] studentScores = new int[7];
-    private static String[] ordinalIndicators = { "st", "nd", "rd", "th" };
-
-    // For other people to be able to use ordinal indicators.
-    public static String[] getOrdinalIndicators() {
-        return ordinalIndicators;
-    }
 
     public static int[] storeStudentScores() {
 
