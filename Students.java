@@ -108,9 +108,4 @@ public class Students {
     public static int getAmountOfStudents() {
         return amountOfStudents;
     }
-
-    public static void setStudentScores(int[] studentScores) {
-        Students.studentScores = studentScores;
-    }
-    
 }
