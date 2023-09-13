@@ -1,7 +1,6 @@
 public class Menu {
 
     // This class contains all logic related to the menu where the user can choose what to do.
-
     public static void main(String[] args) {
         Students.inputStudentScores();
         Students.printStudentScores();
