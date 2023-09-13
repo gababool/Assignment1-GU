@@ -1,13 +1,24 @@
 public class Menu {
+<<<<<<< Updated upstream
     static int[] studentScores;
 
     public static void main(String[] args) {
         studentScores = Task1.inputStudentScores(7);
         Task1.printStudentScores(studentScores);
+=======
+      private static int[] studentScores = new int[0];
+ 
+    // This class contains all logic related to the menu where the user can choose what to do.
+
+    public static void main(String[] args) {
+        studentScores = Students.inputStudentScores(7);
+        Students.printStudentScores(studentScores);
+>>>>>>> Stashed changes
         menu();
     }
 
     public static void menu() {
+<<<<<<< Updated upstream
         boolean keepGoing = true;
         do {
             System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
@@ -19,6 +30,9 @@ public class Menu {
             System.out.println("5. Find the highest score and its position.");
             System.out.println("6. Collect hashtags from a post.");
             System.out.println("7. To exit. \n");
+=======
+        System.out.println("\nWelcome to the menu. Choose one of the options below: \n");
+>>>>>>> Stashed changes
 
             System.out.print("Type your option: ");
 
@@ -33,6 +47,7 @@ public class Menu {
     public static boolean executeTask(int userInput) {
         switch (userInput) {
             case 1:
+<<<<<<< Updated upstream
                 studentScores = Task1.inputStudentScores(7);
                 break;
 
@@ -50,6 +65,25 @@ public class Menu {
 
             case 5:
                 Task5.findHighestScore(studentScores);
+=======
+                studentScores = Students.inputStudentScores(7);
+                break;
+
+            case 2:
+                Students.printStudentScores(studentScores);
+                break;
+
+            case 3:
+                Students.meanOfScores(studentScores);
+                break;
+
+            case 4:
+                Students.highestAndLowestScore(studentScores);
+                break;
+
+            case 5:
+                Students.findHighestScore(studentScores);
+>>>>>>> Stashed changes
                 break;
 
             case 6:
