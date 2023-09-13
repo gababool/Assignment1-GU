@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// This class is a reusable Scanner which eliminates the need to import one in different places.
+
 public class IOScanner {
     private static Scanner scanner = new Scanner(System.in);
 

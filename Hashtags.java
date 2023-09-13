@@ -1,4 +1,7 @@
-public class Task6 {
+
+// This class contains methods related to finding Hashtags, which is unrelated to student scores.
+
+public class Hashtags {
 
     public static void hashtagFinder() {
         System.out.println("Type a sentence using hashtags: ");
@@ -23,5 +26,4 @@ public class Task6 {
             System.out.println("Hashtags found: " + foundHashtags);
         }
     }
-
 }
