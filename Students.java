@@ -4,10 +4,11 @@ import java.util.Locale;
 
 public class Students {
 
-    private static int amountOfStudents = 7;
-    private static int[] studentScores = new int[amountOfStudents];
+    // private static int amountOfStudents = 7;
+    // private static int[] studentScores = new int[amountOfStudents];
     
-    public static void inputStudentScores() {
+    public static int[] inputStudentScores(int numberOfStudents) {
+        int[] studentScores = new int[numberOfStudents];
         for (int i = 0; i <= studentScores.length - 1; i++) {
             System.out.print("Enter the score for the " + addOrdinalIndicator(i + 1) + " student ");
             studentScores[i] = IOScanner.inputInt();
@@ -19,9 +20,10 @@ public class Students {
             }
         }
         System.out.println("Thank you for your input.");
+        return studentScores;
     }
 
-    public static void printStudentScores() {
+    public static String printStudentScores(int[] studentScores) {
         String scores = "";
         for (int i = 0; i < studentScores.length; i++) {
             scores += studentScores[i];
@@ -30,9 +32,10 @@ public class Students {
             }
         }
         System.out.println("Your entered scores are:\n" + scores);
+        return scores;
     }
 
-    public static void meanOfScores() {
+    public static void meanOfScores(int[] studentScores) {
         int totalScore = 0;
 
         for (int i = 0; i < studentScores.length; i++) {
@@ -44,7 +47,7 @@ public class Students {
         System.out.printf(Locale.ENGLISH, "The mean of the numbers is %.2f ", mean);
     }
 
-    public static void highestAndLowestScore() {
+    public static void highestAndLowestScore(int[] studentScores) {
         int highest = 0;
         int secondHighest = 0;
         int lowest = 100;
@@ -71,7 +74,7 @@ public class Students {
 
     }
 
-    public static void findHighestScore() {
+    public static void findHighestScore(int[] studentScores) {
         int highestScore = studentScores[0];
         int highestScoreIndex = 0;
 
@@ -101,11 +104,11 @@ public class Students {
 
     }
 
-    public static int[] getStudentScores() {
-        return studentScores;
-    }
+  //  public static int[] getStudentScores() {
+    //    return studentScores;
+    //}
 
-    public static int getAmountOfStudents() {
-        return amountOfStudents;
-    }
+    //public static int getAmountOfStudents() {
+     //   return amountOfStudents;
+    //}
 }

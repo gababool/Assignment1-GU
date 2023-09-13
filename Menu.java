@@ -1,9 +1,11 @@
 public class Menu {
+    private static int[] studentScores = new int[0];
 
-    // This class contains all logic related to the menu where the user can choose what to do.
+    // This class contains all logic related to the menu where the user can choose
+    // what to do.
     public static void main(String[] args) {
-        Students.inputStudentScores();
-        Students.printStudentScores();
+        studentScores = Students.inputStudentScores(7);
+        Students.printStudentScores(studentScores);
         menu();
     }
 
@@ -30,23 +32,23 @@ public class Menu {
     public static void executeTask(int userInput) {
         switch (userInput) {
             case 1:
-                Students.inputStudentScores();
+                Students.inputStudentScores(7);
                 break;
 
             case 2:
-                Students.printStudentScores();
+                Students.printStudentScores(studentScores);
                 break;
 
             case 3:
-                Students.meanOfScores();
+                Students.meanOfScores(studentScores);
                 break;
 
             case 4:
-                Students.highestAndLowestScore();
+                Students.highestAndLowestScore(studentScores);
                 break;
 
             case 5:
-                Students.findHighestScore();
+                Students.findHighestScore(studentScores);
                 break;
 
             case 6:
