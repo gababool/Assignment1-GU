@@ -100,12 +100,4 @@ public class Students {
         }
 
     }
-
-    public static int[] getStudentScores() {
-        return studentScores;
-    }
-
-    public static int getAmountOfStudents() {
-        return amountOfStudents;
-    }
 }
