@@ -6,21 +6,24 @@ public class Students {
 
     private static int amountOfStudents = 7;
     private static int[] studentScores = new int[amountOfStudents];
-    
+
     // Change to a while loop!
 
     public static void readStudentScores() {
-        for (int i = 0; i <= studentScores.length - 1; i++) {
-            System.out.print("Enter the score for the " + addOrdinalIndicator(i + 1) + " student ");
-            studentScores[i] = IOScanner.inputInt();
-            IOScanner.inputString(); // Works as nextLine();
-
+        int i = 0;
+        do {
+            studentScores[i] = IOScanner
+                    .inputInt("Enter the score for the " + addOrdinalIndicator(i + 1) + " student ");
             if (studentScores[i] < 0 || studentScores[i] > 100) {
                 System.out.println("Error - Input out of bound. Score can only be between 0 and 100.");
-                i--;
+            } else {
+                i++;
             }
-        }
+
+        } while (i < amountOfStudents);
+
         System.out.println("Thank you for your input.");
+
     }
 
     public static void printStudentScores() {
