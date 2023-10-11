@@ -7,7 +7,9 @@ public class Students {
     private static int amountOfStudents = 7;
     private static int[] studentScores = new int[amountOfStudents];
     
-    public static void inputStudentScores() {
+    // Change to a while loop!
+
+    public static void readStudentScores() {
         for (int i = 0; i <= studentScores.length - 1; i++) {
             System.out.print("Enter the score for the " + addOrdinalIndicator(i + 1) + " student ");
             studentScores[i] = IOScanner.inputInt();
@@ -32,7 +34,7 @@ public class Students {
         System.out.println("Your entered scores are:\n" + scores);
     }
 
-    public static void meanOfScores() {
+    public static void calculateMeanOfScores() {
         int totalScore = 0;
 
         for (int i = 0; i < studentScores.length; i++) {
@@ -44,7 +46,7 @@ public class Students {
         System.out.printf(Locale.ENGLISH, "The mean of the numbers is %.2f ", mean);
     }
 
-    public static void highestAndLowestScore() {
+    public static void findHighestAndLowestScores() {
         int highest = 0;
         int secondHighest = 0;
         int lowest = 100;

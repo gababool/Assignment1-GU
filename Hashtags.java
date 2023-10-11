@@ -3,7 +3,7 @@
 
 public class Hashtags {
 
-    public static void hashtagFinder() {
+    public static void collectHashtags() {
         System.out.println("Type a sentence using hashtags: ");
         String sentence = IOScanner.inputString();
         String[] stringArray = sentence.split(" ");

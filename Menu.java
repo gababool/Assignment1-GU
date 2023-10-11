@@ -3,7 +3,7 @@ public class Menu {
     // This class contains all logic related to the menu where the user can choose what to do.
 
     public static void main(String[] args) {
-        Students.inputStudentScores();
+        Students.readStudentScores();
         Students.printStudentScores();
         menu();
     }
@@ -31,7 +31,7 @@ public class Menu {
     public static void executeTask(int userInput) {
         switch (userInput) {
             case 1:
-                Students.inputStudentScores();
+                Students.readStudentScores();
                 break;
 
             case 2:
@@ -39,11 +39,11 @@ public class Menu {
                 break;
 
             case 3:
-                Students.meanOfScores();
+                Students.calculateMeanOfScores();
                 break;
 
             case 4:
-                Students.highestAndLowestScore();
+                Students.findHighestAndLowestScores();
                 break;
 
             case 5:
@@ -51,7 +51,7 @@ public class Menu {
                 break;
 
             case 6:
-                Hashtags.hashtagFinder();
+                Hashtags.collectHashtags();
                 break;
 
             case 7:
