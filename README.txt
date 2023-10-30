@@ -29,4 +29,4 @@ and decided whether to keep those changes, revert them or do something else comp
 
 For the re examination of this assignment, we changed the menu to a do while loop, we changed the looping for
 entering the students scores in Students, we renamed methods to more descriptive names (verbs first) and fixed 
-the IOSCanner so that it takes input directly.
+the IOSCanner to include a string to print as a prompt.
