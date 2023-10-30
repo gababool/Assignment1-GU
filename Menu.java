@@ -20,13 +20,13 @@ public class Menu {
             System.out.println("7. To exit. \n");
 
             userInput = IOScanner.inputInt("Type your option: ");
-            executeTask(userInput);
+            executeTaskFromInput(userInput);
 
         } while (userInput != 7);
 
     }
 
-    public static void executeTask(int userInput) {
+    public static void executeTaskFromInput(int userInput) {
         switch (userInput) {
             case 1:
                 Students.readStudentScores();

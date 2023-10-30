@@ -24,3 +24,6 @@ Last of all, we tidied up the code, reduced code repetition and removed unnecess
 Most of the work was done in school where everybody participated, but we did communicate ideas and tried to
 implement different soultions from home with GitHub branches. We then discussed those ideas once we met in school
 and decided whether to keep those changes, revert them or do something else completely. 
+
+For the re examination of this assignment, we changed the menu to a do while loop, we changed the looping for
+entering the students scores, we renamed methods and fixed the IOSCanner.
